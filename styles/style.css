@@ -1,0 +1,188 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: NorseBold;
+	src: url("../fonts/Norse-Bold.otf");
+}
+
+body {
+	background: #fbfbfb;
+	font-family: "NorseBold", sans-serif;
+}
+
+/* Global */
+
+input {
+	padding: 10px;
+	border: 1px solid cyan;
+	border-radius: 6px;
+	transition: all .3s ease;
+	outline: none;
+}
+
+
+/* Global */
+
+/* Fonts */
+
+/* Fonts */
+
+/* Wrapper */
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+
+.wrapper > div {
+	float: left;
+	height: 100%;
+}
+
+.wrapper-left-part {
+	width: 35%;
+	background-image: url('../img/background-for-registration.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.wrapper-right-part {
+	width: 65%;
+	overflow-y: auto;
+}
+
+.wrapper-left-part-info {
+	width: 100%;
+	height: 100px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.wrapper-left-part-info > p {
+	font-size: 64px;
+}
+
+.author {
+	position: absolute;
+	bottom: 10px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	background: rgba(2, 2, 2, 0.5);
+}
+
+.author > a {
+	text-decoration: underline;
+	color: darkcyan;
+	text-align: center;
+	word-spacing: 2px;
+}
+
+.wrapper-right-part {
+}
+
+.greeting-title, .greeting-title2 {
+	font-family: Arial;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.greeting-title {
+	padding-top: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.greeting-title2 {
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.greeting-title3 {
+	font-family: Arial;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.user-form {
+	margin-top: 40px;
+}
+
+.user-form-wrapper {
+	background: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-ivenly;
+	align-items: stretch;
+	gap: 20px;
+	padding: 20px 40px;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+fieldset {
+	display: flex;
+	justify-content: space-between;
+	gap: 80px;
+}
+
+fieldset > div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	gap: 5px;
+}
+
+fieldset > div > label {
+	font-family: Arial;
+	opacity: 0.9;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+input:focus {
+	border: 1px solid blue;
+	border-radius: 20px;
+	opacity: 0.6;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;1
+}
+
+.create-account-btn {
+	background-color: #596D48;
+	padding: 10px 30px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.account-message {
+	color: black;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.account-message span {
+	color: green;
+	cursor: pointer;
+}
